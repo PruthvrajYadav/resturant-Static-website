@@ -1,0 +1,419 @@
+
+body{
+    font-family:"robot";
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+#hero, #about,#card,#Image,#menu,#TESTIMONIALS,#img-info,#chefs,#booking,#gallery,#contact,#fotter{
+    
+    -webkit-user-select: none;
+}
+
+#hero h1{
+    /* margin-top: 5rem; */
+    /* padding-top: 5rem; */
+}
+#offcanvas a:hover{
+    color: red;
+}
+
+.navbar a:hover{
+    color: red;
+}
+
+
+
+#hero{
+    margin-top: 2rem;
+}
+
+#hero h1{
+    margin-top: 10rem;
+}
+
+/* #hero button{
+    padding: 1rem;
+    border-radius: 0.8rem;
+} */
+#hero i{
+    height: 3rem;
+    width: 3rem;
+    /* background-color: white; */
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 50%;
+    margin-left: 2rem;
+    /* margin-left: 2rem; */
+
+}
+#hero img{
+    height: 80%;
+    width: 80%;
+/* animation-name: sagar; */
+/* animation-duration: 3s; */
+/* animation-iteration-count:5; */
+
+
+   animation: upDown 2s infinite alternate;
+
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+   
+
+
+#about  i{
+    height: 0.1rem;
+    width: 0.1rem;
+    background-color: red;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .dibox{
+    border: 2px solid black;
+    padding: 1rem;
+}
+
+#about .small{
+    height: 76%;
+    /* width: 10rem; */
+}
+.img-info /* styles.css */
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#img {
+    position: relative;
+    width: 40rem;
+    height: 20rem;
+}
+
+#img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+#video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    pointer-events: none; /* Prevent video container from being clicked initially */
+}
+
+#video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    pointer-events: all; /* Allow video to be clickable */
+}
+
+#img:hover img {
+    opacity: 0; /* Hide image on hover */
+}
+
+#img:hover #video-container {
+    opacity: 1; /* Show video on hover */
+    pointer-events: all; /* Allow video container to be clickable */
+}
+
+
+#card .box1{
+      background-color: red;
+    /* margin:0.5rem; */
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem #131313;
+
+}
+
+#card .box{
+    background-color: rgba(255, 255, 255, 0.555);
+    margin:1rem; 
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem #131313;
+}
+
+#card .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252,243,243);
+    color: rgb(206,18,18);
+    height: 3rem;
+    width: 3.2rem;
+    border-radius: 50%;
+}
+#card .icon:hover{
+    background-color: rgb(206,18,18);
+    color: white;
+}
+
+#card button{
+     background-color: rgb(213,53,53);
+     color: white;
+    border-radius: 2rem;
+}
+
+#card button:hover{
+background-color: white;
+color: black;
+}
+
+#Image img{
+    /* background-image: url("https://bootstrapmade.com/demo/templates/Yummy/assets/img/stats-bg.jpg");
+    height: 40vh;
+    width: 100%;
+     background-size: cover; */
+    background-position: center; 
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+    opacity: 1;
+  /* #image { */
+  /* filter: grayscale(50%);  */
+  filter:  brightness(50%);
+}
+
+
+/* } */
+
+#menu{
+    /* height: 100vh; */
+}
+
+
+.img-text{
+    width: 100%;
+    height: 300px;
+    display: block;
+    text-align: center;
+    padding: 10% 5%;
+    background: white;
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem #131313;
+
+    color: black;
+    border-radius: 15px;
+}
+
+.img-text h2{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.img-text p{
+    font-size: 14px;
+}
+.single-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.img-area{
+     position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 5px solid aqua;
+    overflow: hidden; 
+    top: 15px;
+    left: 12px;
+    border-radius: 50%;
+}
+
+.img-area img{
+    width: 100%;
+}
+
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom: -70px;
+}
+
+.carousel-indicators button{
+    background: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.carousel-indicators .active{
+    background: #fff;
+}
+
+#TESTIMONIALS .fa-solid{
+    color: gold;
+}
+#TESTIMONIALS .card1:hover{
+    transform: scale(1.1);
+    transition: 2s;
+
+} 
+
+.smallImg{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+#img-info img{
+    filter: brightness(50%);
+    
+}
+
+
+
+.wrapper{
+       display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+   position: relative; 
+    width: 100%;
+    height: 100%;
+    transition: all 0.6s ease;
+    
+   
+}
+
+ img{
+    width: 100%;
+    display: block;
+    margin: auto;
+   
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.content:hover{
+    opacity: 1.5; 
+    box-shadow: 0.4rem 0.4rem 0.4rem 0.4rem #131313;
+    
+
+}
+
+#portfolio a{
+    color: black;
+}
+
+
+ .fa-twitter,.fa-facebook,.fa-instagram,.fa-linkedin{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5rem;
+ }
+
+#chefs  a{
+    color:black;
+    text-decoration: none;
+}
+
+
+#chefs img{
+    padding-right: 1rem;
+}
+
+#chefs .image{
+    border: 2px solid black;
+}
+
+
+#chefs  .image:hover{
+    transform: scale(1.1);
+    /* border: 2px solid black; */
+}
+
+#booking img{
+    height: 80%;
+}
+
+#gallery img{
+    height: 15rem;
+    width: 5rem;
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+
+#contact i{
+  background-color:rgba(0, 0, 0, 0.079);
+    color: red;
+    height: 4rem;
+    width: 3.8rem;
+    padding: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 50%;
+
+}
+
+#contact i:hover{
+      background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+#contact i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fotter{
+    background-color: rgb(31,31,36);
+}
+
+#fotter .icons a{
+    color: white;
+    /* background-color: aqua; */
+}
+
+#fotter .icons a:hover{
+    color: red;
+    /* background-color: aqua; */
+}
